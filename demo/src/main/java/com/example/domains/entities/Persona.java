@@ -47,7 +47,7 @@ public class Persona implements EntityValidatable {
 		return nombre;
 	}
 	public void setNombre(String nombre) {
-		if(nombre == null)
+		if(nombre == null || "".equals(nombre.trim()))
 			throw new IllegalArgumentException("El nombre no puede ser nulo.");
 		this.nombre = nombre;
 	}
@@ -98,7 +98,7 @@ public class Persona implements EntityValidatable {
 				+ "]";
 	}
 
-	public static Persona creaPersona(String nombre) {
+	public static Persona creaPersonaSoloConNombre(String nombre) {
 //		return null;
 		var p = new Persona();
 		p.setNombre(nombre);
@@ -110,22 +110,22 @@ public class Persona implements EntityValidatable {
 		return new Persona(0, nombre, apellidos);
 	}
 
-//	@Override
-//	public int hashCode() {
-//		return Objects.hash(id);
-//	}
-//
-//	@Override
-//	public boolean equals(Object obj) {
-//		if (this == obj) {
-//			return true;
-//		}
-//		if (obj instanceof Persona p) {
-//			return id == p.id;
-//		} else {
-//			return false;
-//		}
-//	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj instanceof Persona p) {
+			return id == p.id;
+		} else {
+			return false;
+		}
+	}
 
 	@Override
 	public String getErrorsMessage() {
