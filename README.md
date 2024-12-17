@@ -59,9 +59,11 @@
 - <https://github.com/jmagit/Web4Testing>
 - <https://github.com/jmagit/MOCKWebServer>
 
-## Kata
+## Katas
 
 - [GildedRose](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/main/GildedRoseRequirements_es.md)
+- [Coding Dojo](https://codingdojo.org/kata/)
+- [Traducciones](https://www.codurance.com/es/katas)
 
 ## Ejemplos
 
