@@ -27,7 +27,7 @@ import com.example.testutils.SmokeTest;
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 class CalculadoraTest {
 	Calculadora calculadora;
-	
+
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 	}
@@ -75,12 +75,12 @@ class CalculadoraTest {
 			}
 
 			@ParameterizedTest(name = "{index} => {0} + {1} = {2}")
-			@CsvSource({"1,2,3","0.1,0.2,0.3", "-1,2,1","1,-0.9,0.1","0,0,0"})
+			@CsvSource({ "1,2,3", "0.1,0.2,0.3", "-1,2,1", "1,-0.9,0.1", "0,0,0" })
 			void testSumas(double operando1, double operando2, double resultado) {
 				double actual = calculadora.suma(operando1, operando2);
 				assertEquals(resultado, actual);
 			}
-			
+
 		}
 
 		@Nested
@@ -97,6 +97,7 @@ class CalculadoraTest {
 			}
 		}
 	}
+
 	@Nested
 	@DisplayName("Método: Divide")
 	class Divide {
@@ -104,24 +105,26 @@ class CalculadoraTest {
 		class OK {
 			@Test
 			@DisplayName("Divide dos enteros")
-			void testDivideInt () {
+			void testDivideInt() {
 				double actual = calculadora.divide(1, 2);
 
 				assertEquals(0, actual);
 			}
+
 			@Test
 			@DisplayName("Divide con decimales")
-			void testDivideDouble () {
+			void testDivideDouble() {
 				double actual = calculadora.divide(1.0, 2.0);
 
 				assertEquals(0.5, actual);
 			}
 		}
+
 		@Nested
 		class KO {
 			@Test
 			@DisplayName("Divide por 0")
-			void testDivideDouble () {
+			void testDivideDouble() {
 				var ex = assertThrows(ArithmeticException.class, () -> calculadora.divide(1.0, 0));
 				assertEquals("/ by zero", ex.getMessage());
 //				try {
@@ -141,11 +144,36 @@ class CalculadoraTest {
 
 		}
 	}
-		
-		@Test
-		@SmokeTest
-		void Privado() throws NoSuchMethodException, SecurityException, IllegalAccessException, InvocationTargetException {
-			assertEquals(0.3, PrivateMethod.exec(calculadora, "roundIEEE754", new Class[] { double.class }, (0.1+0.2)));
-			assertEquals(0.1, PrivateMethod.exec(calculadora, "roundIEEE754", new Class[] { double.class }, (1-0.9)));
+
+	@Test
+	@SmokeTest
+	void Privado() throws NoSuchMethodException, SecurityException, IllegalAccessException, InvocationTargetException {
+		assertEquals(0.3, PrivateMethod.exec(calculadora, "roundIEEE754", new Class[] { double.class }, (0.1 + 0.2)));
+		assertEquals(0.1, PrivateMethod.exec(calculadora, "roundIEEE754", new Class[] { double.class }, (1 - 0.9)));
+	}
+	
+	@Nested
+	@DisplayName("Ejemplo TDD con la kata del año bisiesto")
+	class TDD {
+		@Disabled
+		@DisplayName("Es bisiesto")
+		@ParameterizedTest(name = "{0} por {1}")
+		@CsvSource({
+			"2024, ser multiplo de 4",
+			})
+		void bisiestoOK(int año) {
+//			assertTrue(calculadora.esBisiesto(año));
 		}
+		
+//		@Disabled
+		@DisplayName("No es bisiesto")
+		@ParameterizedTest(name = "{0} por {1}")
+		@CsvSource({
+			"2023, no ser multiplo de 4",
+			})
+		void bisiestoKO(int año) {
+//			assertFalse(calculadora.esBisiesto(año));
+		}
+	}
+
 }
