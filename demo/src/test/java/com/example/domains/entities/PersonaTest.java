@@ -5,11 +5,12 @@ import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThanOrEqualTo;
 import static org.hamcrest.Matchers.hasProperty;
-import static org.junit.Assume.assumeFalse;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.CALLS_REAL_METHODS;
+import static org.mockito.Mockito.mockStatic;
 
 import java.time.LocalDate;
 import java.util.Optional;
@@ -17,14 +18,17 @@ import java.util.Optional;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.RepetitionInfo;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.TestReporter;
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.mockito.MockedStatic;
 
 import com.example.testutils.SmokeTest;
 
@@ -32,6 +36,7 @@ class PersonaTest {
 
 	@Nested
 	@DisplayName("Crear persona")
+	@TestMethodOrder(OrderAnnotation.class)
 	class CrearPersona {
 		@Test
 //		@Tag("Smoke")
@@ -57,8 +62,24 @@ class PersonaTest {
 		}
 
 		@Test
+		@Order(1)
 		void testEdad() {
-			var actual = new Persona(0, "Pepito", "Grillo", LocalDate.of(2000, 12, 22));
+			var actual = new Persona(0, "Pepito", "Grillo", LocalDate.of(2000, 12, 19));
+			LocalDate hoy = LocalDate.of(2024, 12, 18);
+			try (MockedStatic<LocalDate> mocked = mockStatic(LocalDate.class, CALLS_REAL_METHODS)) {
+				mocked.when(LocalDate::now).thenReturn(hoy);
+				assertEquals(23, actual.getEdad());
+			}
+//			MockedStatic<LocalDate> mocked = mockStatic(LocalDate.class, CALLS_REAL_METHODS);
+//			mocked.when(LocalDate::now).thenReturn(hoy);
+//			assertEquals(232, actual.getEdad());
+//			mocked.close();
+		}
+		@Order(2)
+		@Test
+		@Disabled("porque es tempo dependiente")
+		void testEdadSinMock() {
+			var actual = new Persona(0, "Pepito", "Grillo", LocalDate.of(2000, 12, 19));
 			assertEquals(23, actual.getEdad());
 		}
 

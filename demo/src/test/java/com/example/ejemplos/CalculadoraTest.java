@@ -5,6 +5,11 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -187,6 +192,27 @@ class CalculadoraTest {
 			})
 		void bisiestoKO(int año, String caso) {
 			assertFalse(calculadora.esBisiesto(año));
+		}
+	}
+	@Nested
+	@DisplayName("Ejemplos Mock")
+	class Mokea {
+		@Test
+		void simulaSuma() {
+			var calc = mock(Calculadora.class);
+//			when(calc.suma(2, 2)).thenReturn(3).thenReturn(4).thenReturn(5);
+//			when(calc.suma(21, 2)).thenReturn(33);
+			when(calc.suma(anyInt(), anyInt())).thenReturn(3).thenReturn(4).thenReturn(5);
+			
+			var actual = calc.suma(2, 2);
+			assertEquals(3, actual);
+			assertEquals(4, calc.suma(2, 2));
+			assertEquals(5, calc.suma(2, 2));
+			assertEquals(5, calc.suma(2, 2));
+			assertEquals(5, calc.suma(21, 2));
+			assertEquals(5, calc.suma(2, 2));
+			
+			verify(calc, times(5)).suma(2, 2);
 		}
 	}
 

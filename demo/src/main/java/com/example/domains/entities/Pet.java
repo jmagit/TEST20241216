@@ -44,7 +44,7 @@ public class Pet extends AbstractEntity<Pet> implements Serializable {
 
 	@Column(length=30)
 	@NotBlank
-	@Size(max = 30)
+	@Size(max = 30, min = 2)
 	private String name;
 
 	//bi-directional many-to-one association to Owner
