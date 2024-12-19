@@ -97,6 +97,7 @@ class PetsServiceTest {
 				verify(dao, times(1)).findAll();
 				obtenido.forEach(item -> out.publishEntry(item.toString()));
 			}
+			
 			@Test
 			@DisplayName("getAll: recupera 0 entidades porque esta vacía")
 			void testGetAll_isEmpty() {
@@ -131,6 +132,7 @@ class PetsServiceTest {
 				var obtenido = assertDoesNotThrow(() -> srv.add(item));
 
 				assertNotNull(obtenido);
+				verify(dao, times(1)).save(item);
 				assertAll("Propiedades", 
 						() -> assertEquals(1, obtenido.getId()),
 						() -> assertEquals("Toto", obtenido.getName(), "Name"),
