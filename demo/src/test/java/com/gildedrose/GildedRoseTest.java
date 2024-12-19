@@ -41,7 +41,7 @@ class GildedRoseTest {
 //		for (int i = 0; i < 30; i++)
 //			assertDoesNotThrow(() -> app.updateQuality());
 //	}
-//
+
 	@ParameterizedTest(name = "{index} => sellIn: {0} quality: {1} –> sellIn: {2} quality: {3}")
 	@CsvSource({ 
 		"11, 10, 10, 9", 
@@ -126,7 +126,7 @@ class GildedRoseTest {
         		);
 	}
 
-	@Disabled
+//	@Disabled
 	@ParameterizedTest(name = "{index} => sellIn: {0} quality: {1} –> sellIn: {2} quality: {3}")
 	@CsvSource({
 		"11, 10, 10, 8",
@@ -150,7 +150,7 @@ class GildedRoseTest {
 
 //	@Disabled
 	@ParameterizedTest(name = "{0} => sellIn: {1} quality: {2} –> sellIn: {3} quality: {4}")
-	@CsvFileSource(resources = "casos-de-prueba.csv", numLinesToSkip = 1)
+	@CsvFileSource(resources = "/casos-de-prueba.csv", numLinesToSkip = 1)
 	void datasourceTest(String producto, int sellIn, int quality, int sellInResult, int qualityResult) {
 		String name = producto.replace("\'", "");
 		assumeFalse("Conjured Mana Cake".equals(name));
@@ -179,7 +179,8 @@ class GildedRoseTest {
 				new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
 				new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),
 				// this conjured item does not work properly yet
-				new Item("Conjured Mana Cake", 3, 6) };
+				new Item("Conjured Mana Cake", 3, 6) 
+				};
 
 		GildedRose app = new GildedRose(items);
 		var output = new StringBuilder();

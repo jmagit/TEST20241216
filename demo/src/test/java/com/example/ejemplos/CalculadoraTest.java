@@ -1,5 +1,7 @@
 package com.example.ejemplos;
 
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -59,6 +61,16 @@ class CalculadoraTest {
 				double actual = calculadora.suma(1, 2);
 
 				assertEquals(3, actual);
+				// desmont
+			}
+
+			@Test
+			void test_Suma_dos_enteros_grandes() {
+//				Calculadora calculadora = new Calculadora();
+
+				int actual = calculadora.suma(Integer.MAX_VALUE, 1);
+
+				assertEquals(Integer.MIN_VALUE, actual);
 				// desmont
 			}
 
@@ -155,14 +167,15 @@ class CalculadoraTest {
 	@Nested
 	@DisplayName("Ejemplo TDD con la kata del año bisiesto")
 	class TDD {
-		@Disabled
+//		@Disabled
 		@DisplayName("Es bisiesto")
 		@ParameterizedTest(name = "{0} por {1}")
 		@CsvSource({
 			"2024, ser multiplo de 4",
+			"2000, ser multiplo de 400",
 			})
-		void bisiestoOK(int año) {
-//			assertTrue(calculadora.esBisiesto(año));
+		void bisiestoOK(int año, String caso) {
+			assertTrue(calculadora.esBisiesto(año));
 		}
 		
 //		@Disabled
@@ -170,9 +183,10 @@ class CalculadoraTest {
 		@ParameterizedTest(name = "{0} por {1}")
 		@CsvSource({
 			"2023, no ser multiplo de 4",
+			"1900, es multiplo de 100",
 			})
-		void bisiestoKO(int año) {
-//			assertFalse(calculadora.esBisiesto(año));
+		void bisiestoKO(int año, String caso) {
+			assertFalse(calculadora.esBisiesto(año));
 		}
 	}
 
