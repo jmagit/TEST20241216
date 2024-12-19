@@ -1,10 +1,12 @@
 package com.example.db;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsStringIgnoringCase;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -13,11 +15,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.testcontainers.containers.GenericContainer;
-import org.testcontainers.containers.PostgreSQLContainer;
-import org.testcontainers.junit.jupiter.Container;
-import org.testcontainers.utility.DockerImageName;
-import org.testcontainers.utility.MountableFile;
 
 class JDBCTest {
 	@BeforeAll
@@ -60,13 +57,8 @@ class JDBCTest {
 	@Test
 	void testDelete() {
 		try (Connection conn = this.getConnection()) {
-			var actual = conn.createStatement().executeUpdate("delete from vets");
-			assertEquals(6, actual);
-//			var cmd = conn.prepareStatement("select count(*) from vets");
-//			ResultSet rs = cmd.executeQuery();
-//			rs.next();
-//			var actual = rs.getLong(1);
-//			assertEquals(6, actual);
+			var ex = assertThrows(SQLException.class, () -> conn.createStatement().executeUpdate("delete from vets"));
+			assertThat(ex.getMessage(), containsStringIgnoringCase("foreign key"));
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
