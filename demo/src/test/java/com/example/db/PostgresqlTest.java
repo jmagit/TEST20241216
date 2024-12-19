@@ -21,9 +21,9 @@ class PostgresqlTest {
 
 	//@Container
 	PostgreSQLContainer<?> postgres = 
-//			PostgreSQLContainerSingleton.getContainer()
-			new PostgreSQLContainer<>("postgres:17-alpine")
-				.withInitScript("init-db.sql")
+			PostgreSQLContainerSingleton.getContainer()
+//			new PostgreSQLContainer<>("postgres:17-alpine")
+//				.withInitScript("init-db.sql")
 //				.withCopyFileToContainer(MountableFile.forClasspathResource("init-db.sql"), "/docker-entrypoint-initdb.d/")
 			;
 	DBConnectionProvider connectionProvider;
@@ -48,8 +48,8 @@ class PostgresqlTest {
 	}
 
 	@Test
-	@Order(3)
-	void testConnection() {
+	@Order(1)
+	void testCount() {
 	    try (Connection conn = this.connectionProvider.getConnection()) {
 	        var cmd = conn.prepareStatement("select count(*) from pets");
 	        ResultSet rs = cmd.executeQuery();
