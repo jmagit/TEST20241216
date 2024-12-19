@@ -20,7 +20,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 class GildedRoseTest {
 
 	@Test
-	@Disabled
+	@Disabled("Es el ejemplo")
 	void foo() {
 		Item[] items = new Item[] { new Item("foo", 0, 0) };
 		GildedRose app = new GildedRose(items);

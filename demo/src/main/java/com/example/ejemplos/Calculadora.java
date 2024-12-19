@@ -24,7 +24,7 @@ public class Calculadora {
 	}
 
 	private double roundIEEE754(double o) {
-		return (new BigDecimal(o))
+		return BigDecimal.valueOf(o)
 				.setScale(16, RoundingMode.HALF_UP)
 				.doubleValue();
 	}
