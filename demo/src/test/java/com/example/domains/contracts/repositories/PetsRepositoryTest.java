@@ -83,7 +83,7 @@ class PetsRepositoryTest {
 		var item = Pet.builder()
 				.name("Toto")
 				.birthDate(toDate("2020-09-07"))
-//				.type(new Type(1))
+				.type(new Type(1))
 				.build();
 		assumeTrue("Prueba cancelada por datos invalidos", item.isValid());
 		Pet obtenido;

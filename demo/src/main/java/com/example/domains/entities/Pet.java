@@ -56,7 +56,7 @@ public class Pet extends AbstractEntity<Pet> implements Serializable {
 	//bi-directional many-to-one association to Type
 	@ManyToOne
 	@JoinColumn(name="type_id", nullable=false)
-//	@NotNull
+	@NotNull
 	private Type type;
 
 	//bi-directional many-to-one association to Visit

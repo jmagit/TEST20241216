@@ -43,7 +43,8 @@ class ActorProxyTest {
 		stubFor(get(urlEqualTo("/api/actores/1"))
 				.withHeader("accept", equalTo("application/json"))
 				.willReturn(aResponse()
-						.withStatus(200).withFixedDelay(3000)
+						.withStatus(200)
+//						.withFixedDelay(3000)
 						.withBody("{ \"id\": 1, \"nombre\":\"John\",\"apellidos\":\"Doe\"}")
 				));
 

@@ -66,10 +66,10 @@ class PetsServiceTest {
 		@BeforeEach
 		void setUp(TestReporter out) throws Exception {
 			listaFake = new ArrayList<Pet>(Arrays.asList(
-					new Pet(1, "Toto", "2020-09-07"),
-					new Pet(2, "Leo", "2019-02-11"), 
-					new Pet(3, "Chita", "2001-12-31"),
-					new Pet(4, "Lassie","2022-08-15")
+					new Pet(1, "Toto", "2020-09-07", 1, 1),
+					new Pet(2, "Leo", "2019-02-11", 1, 1), 
+					new Pet(3, "Chita", "2001-12-31", 1, 1),
+					new Pet(4, "Lassie","2022-08-15", 1, 1)
 					));
 			dao = mock(PetsRepository.class);
 			srv = new PetsServiceImpl(dao);
@@ -113,7 +113,7 @@ class PetsServiceTest {
 			@Test
 			@DisplayName("getOne: recupera la entidad por su ID")
 			void testGetOne() {
-				when(dao.findById(1)).thenReturn(Optional.of(new Pet(1, "Toto", "2020-09-07")));
+				when(dao.findById(1)).thenReturn(Optional.of(new Pet(1, "Toto", "2020-09-07", 1, 1)));
 				
 				var obtenido = srv.getOne(1).orElseGet(() -> fail("Empty"));
 				
@@ -126,8 +126,8 @@ class PetsServiceTest {
 			@Test
 			@DisplayName("add: añade una entidad sin ID")
 			void testAdd_withoutKey() {
-				var item = new Pet(0, "Toto", "2020-09-07");
-				when(dao.save(any(Pet.class))).thenReturn(new Pet(1, "Toto", "2020-09-07"));
+				var item = new Pet(0, "Toto", "2020-09-07", 1, 1);
+				when(dao.save(any(Pet.class))).thenReturn(new Pet(1, "Toto", "2020-09-07", 1, 1));
 
 				var obtenido = assertDoesNotThrow(() -> srv.add(item));
 
@@ -142,9 +142,9 @@ class PetsServiceTest {
 			@Test
 			@DisplayName("add: añade una entidad con ID")
 			void testAdd_withKey() {
-				var item = new Pet(1, "Toto", "2020-09-07");
+				var item = new Pet(1, "Toto", "2020-09-07", 1, 1);
 				when(dao.existsById(1)).thenReturn(false);
-				when(dao.save(any(Pet.class))).thenReturn(new Pet(1, "Toto", "2020-09-07"));
+				when(dao.save(any(Pet.class))).thenReturn(new Pet(1, "Toto", "2020-09-07", 1, 1));
 
 				var obtenido = assertDoesNotThrow(() -> srv.add(item));
 
@@ -158,9 +158,9 @@ class PetsServiceTest {
 			@Test
 			@DisplayName("modify: modifica una entidad existente")
 			void testModify() {
-				var item = new Pet(1, "Toto", "2020-09-07");
+				var item = new Pet(1, "Toto", "2020-09-07", 1, 1);
 				when(dao.existsById(1)).thenReturn(true);
-				when(dao.findById(1)).thenReturn(Optional.of(new Pet(1, "Toto", "2020-09-07")));
+				when(dao.findById(1)).thenReturn(Optional.of(new Pet(1, "Toto", "2020-09-07", 1, 1)));
 				when(dao.save(any(Pet.class))).thenReturn(item);
 				
 				var obtenido = assertDoesNotThrow(() -> srv.modify(item));
@@ -174,7 +174,7 @@ class PetsServiceTest {
 			@Test
 			@DisplayName("delete: borra una entidad existente")
 			void testDelete() {
-				var item = new Pet(1, "Toto", "2020-09-07");
+				var item = new Pet(1, "Toto", "2020-09-07", 1, 1);
 				doNothing().when(dao).delete(item);
 
 				assertDoesNotThrow(() -> srv.delete(item));
@@ -236,7 +236,7 @@ class PetsServiceTest {
 			@DisplayName("add: lanza una DuplicateKeyException si se intenta añadir una entidad que ya existe")
 			void testAdd_Duplicate() {
 				when(dao.existsById(1)).thenReturn(true);
-				var item = new Pet(1, "Toto", "2020-09-07");
+				var item = new Pet(1, "Toto", "2020-09-07", 1, 1);
 				
 				assertThrows(DuplicateKeyException.class, () -> srv.add(item));
 				
@@ -268,7 +268,7 @@ class PetsServiceTest {
 			@DisplayName("modify: lanza una NotFoundException si se intenta modificar una entidad que no existe")
 			void testModify_NotFoundException() {
 				when(dao.existsById(1)).thenReturn(false);
-				var item = new Pet(1, "Toto", "2020-09-07");
+				var item = new Pet(1, "Toto", "2020-09-07", 1, 1);
 				
 				assertThrows(NotFoundException.class, () -> srv.modify(item));
 				
@@ -417,7 +417,7 @@ class PetsServiceTest {
 			@Order(14) // Apesta
 			@DisplayName("delete: borra una entidad existente")
 			void testDelete() {
-				var item = new Pet(1, "Toto", "2020-09-07");
+				var item = new Pet(1, "Toto", "2020-09-07", 1, 1);
 
 				assertDoesNotThrow(() -> srv.delete(item));
 			}
@@ -483,7 +483,7 @@ class PetsServiceTest {
 			@Test
 			@DisplayName("add: lanza una InvalidDataException si le pasan una entidad con datos inválidos")
 			void testAdd_InvalidData() {
-				var item = new Pet(1, "  ", "2020-09-07");
+				var item = new Pet(1, "  ", "2020-09-07", 1, 1);
 				
 				var ex = assertThrows(InvalidDataException.class, () -> srv.add(item));
 				
@@ -493,7 +493,7 @@ class PetsServiceTest {
 			@Test
 			@DisplayName("add: lanza una DuplicateKeyException si se intenta añadir una entidad que ya existe")
 			void testAdd_Duplicate() {
-				var item = new Pet(13, "Toto", "2020-09-07");
+				var item = new Pet(13, "Toto", "2020-09-07", 1, 1);
 				
 				assertThrows(DuplicateKeyException.class, () -> srv.add(item));
 			}
@@ -508,7 +508,7 @@ class PetsServiceTest {
 			@Test
 			@DisplayName("modify: lanza una InvalidDataException si le pasan una entidad con datos inválidos")
 			void testModify_InvalidData() {
-				var item = new Pet(1, null, "2020-09-07");
+				var item = new Pet(1, null, "2020-09-07", 1, 1);
 				
 				var ex = assertThrows(InvalidDataException.class, () -> srv.modify(item));
 				
@@ -518,7 +518,7 @@ class PetsServiceTest {
 			@Test
 			@DisplayName("modify: lanza una NotFoundException si se intenta modificar una entidad que no existe")
 			void testModify_NotFoundException() {
-				var item = new Pet(22, "Toto", "2020-09-07");
+				var item = new Pet(22, "Toto", "2020-09-07", 1, 1);
 				
 				assertThrows(NotFoundException.class, () -> srv.modify(item));
 			}
