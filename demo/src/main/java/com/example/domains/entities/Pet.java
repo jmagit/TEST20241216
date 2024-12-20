@@ -8,6 +8,7 @@ import java.text.SimpleDateFormat;
 import jakarta.persistence.*;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.PastOrPresent;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -55,6 +56,7 @@ public class Pet extends AbstractEntity<Pet> implements Serializable {
 	//bi-directional many-to-one association to Type
 	@ManyToOne
 	@JoinColumn(name="type_id", nullable=false)
+//	@NotNull
 	private Type type;
 
 	//bi-directional many-to-one association to Visit
