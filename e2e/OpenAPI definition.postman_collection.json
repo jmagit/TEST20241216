@@ -1,0 +1,5551 @@
+{
+	"info": {
+		"_postman_id": "65789139-6d73-4cf7-ace0-403c1d796003",
+		"name": "OpenAPI definition",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8273928"
+	},
+	"item": [
+		{
+			"name": "owners",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "pets",
+							"item": [
+								{
+									"name": "{propertyId}",
+									"item": [
+										{
+											"name": "follow Property Reference-owner-get",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/owners/:id/pets/:propertyId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"owners",
+														":id",
+														"pets",
+														":propertyId"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														},
+														{
+															"key": "propertyId",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												},
+												"description": "get-pet-by-owner-Id"
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/owners/:id/pets/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"owners",
+																":id",
+																"pets",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Not Found",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/owners/:id/pets/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"owners",
+																":id",
+																"pets",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "delete Property Reference Id-owner-delete",
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/owners/:id/pets/:propertyId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"owners",
+														":id",
+														"pets",
+														":propertyId"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														},
+														{
+															"key": "propertyId",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												},
+												"description": "delete-pet-by-owner-Id"
+											},
+											"response": [
+												{
+													"name": "No Content",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/owners/:id/pets/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"owners",
+																":id",
+																"pets",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "No Content",
+													"code": 204,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Not Found",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/owners/:id/pets/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"owners",
+																":id",
+																"pets",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "follow Property Reference-owner-get 1",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id/pets",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id",
+												"pets"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "get-pet-by-owner-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/owners/:id/pets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"owners",
+														":id",
+														"pets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/owners/:id/pets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"owners",
+														":id",
+														"pets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "create Property Reference-owner-put",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id/pets",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id",
+												"pets"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "update-pet-by-owner-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/owners/:id/pets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"owners",
+														":id",
+														"pets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/owners/:id/pets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"owners",
+														":id",
+														"pets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/owners/:id/pets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"owners",
+														":id",
+														"pets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "delete Property Reference-owner-delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id/pets",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id",
+												"pets"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "delete-pet-by-owner-Id"
+									},
+									"response": [
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/owners/:id/pets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"owners",
+														":id",
+														"pets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/owners/:id/pets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"owners",
+														":id",
+														"pets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "create Property Reference-owner-patch",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id/pets",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id",
+												"pets"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "patch-pet-by-owner-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/owners/:id/pets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"owners",
+														":id",
+														"pets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/owners/:id/pets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"owners",
+														":id",
+														"pets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get Item Resource-owner-get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/owners/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"owners",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "get-owner"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "put Item Resource-owner-put",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<integer>\",\n  \"address\": \"<string>\",\n  \"city\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"telephone\": \"<string>\",\n  \"pets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/owners/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"owners",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "update-owner"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"address\": \"<string>\",\n  \"city\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"telephone\": \"<string>\",\n  \"pets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"address\": \"<string>\",\n  \"city\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"telephone\": \"<string>\",\n  \"pets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"address\": \"<string>\",\n  \"city\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"telephone\": \"<string>\",\n  \"pets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "delete Item Resource-owner-delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/owners/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"owners",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "delete-owner"
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "patch Item Resource-owner-patch",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<integer>\",\n  \"address\": \"<string>\",\n  \"city\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"telephone\": \"<string>\",\n  \"pets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/owners/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"owners",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "patch-owner"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"address\": \"<string>\",\n  \"city\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"telephone\": \"<string>\",\n  \"pets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"address\": \"<string>\",\n  \"city\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"telephone\": \"<string>\",\n  \"pets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/owners/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"owners",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get Collection Resource-owner-get 1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/hal+json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/owners?page=0&size=20&sort=<string>&sort=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"owners"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0",
+									"description": "Zero-based page index (0..N)"
+								},
+								{
+									"key": "size",
+									"value": "20",
+									"description": "The size of the page to be returned"
+								},
+								{
+									"key": "sort",
+									"value": "<string>",
+									"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+								},
+								{
+									"key": "sort",
+									"value": "<string>",
+									"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+								}
+							]
+						},
+						"description": "get-owner"
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/hal+json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/owners?page=0&size=20&sort=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"owners"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0",
+											"description": "Zero-based page index (0..N)"
+										},
+										{
+											"key": "size",
+											"value": "20",
+											"description": "The size of the page to be returned"
+										},
+										{
+											"key": "sort",
+											"value": "<string>",
+											"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/hal+json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"_embedded\": {\n    \"owners\": [\n      {\n        \"id\": \"<integer>\",\n        \"address\": \"<string>\",\n        \"city\": \"<string>\",\n        \"firstName\": \"<string>\",\n        \"lastName\": \"<string>\",\n        \"telephone\": \"<string>\",\n        \"pets\": [\n          {\n            \"name\": \"<string>\",\n            \"type\": {\n              \"id\": \"<integer>\",\n              \"name\": \"<string>\",\n              \"pets\": [\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                },\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              ]\n            },\n            \"id\": \"<integer>\",\n            \"birthDate\": \"<dateTime>\",\n            \"owner\": {\n              \"id\": \"<integer>\",\n              \"address\": \"<string>\",\n              \"city\": \"<string>\",\n              \"firstName\": \"<string>\",\n              \"lastName\": \"<string>\",\n              \"telephone\": \"<string>\",\n              \"pets\": [\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                },\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              ]\n            },\n            \"visits\": [\n              {\n                \"id\": \"<integer>\",\n                \"description\": \"<string>\",\n                \"visitDate\": \"<dateTime>\",\n                \"pet\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              },\n              {\n                \"id\": \"<integer>\",\n                \"description\": \"<string>\",\n                \"visitDate\": \"<dateTime>\",\n                \"pet\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              }\n            ]\n          },\n          {\n            \"name\": \"<string>\",\n            \"type\": {\n              \"id\": \"<integer>\",\n              \"name\": \"<string>\",\n              \"pets\": [\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                },\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              ]\n            },\n            \"id\": \"<integer>\",\n            \"birthDate\": \"<dateTime>\",\n            \"owner\": {\n              \"id\": \"<integer>\",\n              \"address\": \"<string>\",\n              \"city\": \"<string>\",\n              \"firstName\": \"<string>\",\n              \"lastName\": \"<string>\",\n              \"telephone\": \"<string>\",\n              \"pets\": [\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                },\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              ]\n            },\n            \"visits\": [\n              {\n                \"id\": \"<integer>\",\n                \"description\": \"<string>\",\n                \"visitDate\": \"<dateTime>\",\n                \"pet\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              },\n              {\n                \"id\": \"<integer>\",\n                \"description\": \"<string>\",\n                \"visitDate\": \"<dateTime>\",\n                \"pet\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              }\n            ]\n          }\n        ],\n        \"_links\": {\n          \"consecteturd\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          }\n        }\n      },\n      {\n        \"id\": \"<integer>\",\n        \"address\": \"<string>\",\n        \"city\": \"<string>\",\n        \"firstName\": \"<string>\",\n        \"lastName\": \"<string>\",\n        \"telephone\": \"<string>\",\n        \"pets\": [\n          {\n            \"name\": \"<string>\",\n            \"type\": {\n              \"id\": \"<integer>\",\n              \"name\": \"<string>\",\n              \"pets\": [\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                },\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              ]\n            },\n            \"id\": \"<integer>\",\n            \"birthDate\": \"<dateTime>\",\n            \"owner\": {\n              \"id\": \"<integer>\",\n              \"address\": \"<string>\",\n              \"city\": \"<string>\",\n              \"firstName\": \"<string>\",\n              \"lastName\": \"<string>\",\n              \"telephone\": \"<string>\",\n              \"pets\": [\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                },\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              ]\n            },\n            \"visits\": [\n              {\n                \"id\": \"<integer>\",\n                \"description\": \"<string>\",\n                \"visitDate\": \"<dateTime>\",\n                \"pet\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              },\n              {\n                \"id\": \"<integer>\",\n                \"description\": \"<string>\",\n                \"visitDate\": \"<dateTime>\",\n                \"pet\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              }\n            ]\n          },\n          {\n            \"name\": \"<string>\",\n            \"type\": {\n              \"id\": \"<integer>\",\n              \"name\": \"<string>\",\n              \"pets\": [\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                },\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              ]\n            },\n            \"id\": \"<integer>\",\n            \"birthDate\": \"<dateTime>\",\n            \"owner\": {\n              \"id\": \"<integer>\",\n              \"address\": \"<string>\",\n              \"city\": \"<string>\",\n              \"firstName\": \"<string>\",\n              \"lastName\": \"<string>\",\n              \"telephone\": \"<string>\",\n              \"pets\": [\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                },\n                {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              ]\n            },\n            \"visits\": [\n              {\n                \"id\": \"<integer>\",\n                \"description\": \"<string>\",\n                \"visitDate\": \"<dateTime>\",\n                \"pet\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              },\n              {\n                \"id\": \"<integer>\",\n                \"description\": \"<string>\",\n                \"visitDate\": \"<dateTime>\",\n                \"pet\": {\n                  \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n                }\n              }\n            ]\n          }\n        ],\n        \"_links\": {\n          \"officiae\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          }\n        }\n      }\n    ]\n  },\n  \"_links\": {\n    \"cillum_0\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  },\n  \"page\": {\n    \"size\": \"<long>\",\n    \"totalElements\": \"<long>\",\n    \"totalPages\": \"<long>\",\n    \"number\": \"<long>\"\n  }\n}"
+						}
+					]
+				},
+				{
+					"name": "post Collection Resource-owner-post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<integer>\",\n  \"address\": \"<string>\",\n  \"city\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"telephone\": \"<string>\",\n  \"pets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/owners",
+						"description": "create-owner"
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<integer>\",\n  \"address\": \"<string>\",\n  \"city\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"telephone\": \"<string>\",\n  \"pets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/owners"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "pets",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "owner",
+							"item": [
+								{
+									"name": "{propertyId}",
+									"item": [
+										{
+											"name": "follow Property Reference-pet-get",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/pets/:id/owner/:propertyId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pets",
+														":id",
+														"owner",
+														":propertyId"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														},
+														{
+															"key": "propertyId",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												},
+												"description": "get-owner-by-pet-Id"
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/pets/:id/owner/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"pets",
+																":id",
+																"owner",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Not Found",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/pets/:id/owner/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"pets",
+																":id",
+																"owner",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "delete Property Reference Id-pet-delete",
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/pets/:id/owner/:propertyId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pets",
+														":id",
+														"owner",
+														":propertyId"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														},
+														{
+															"key": "propertyId",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												},
+												"description": "delete-owner-by-pet-Id"
+											},
+											"response": [
+												{
+													"name": "No Content",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/pets/:id/owner/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"pets",
+																":id",
+																"owner",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "No Content",
+													"code": 204,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Not Found",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/pets/:id/owner/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"pets",
+																":id",
+																"owner",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "follow Property Reference-pet-get 1",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id/owner",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id",
+												"owner"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "get-owner-by-pet-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/pets/:id/owner",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pets",
+														":id",
+														"owner"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/pets/:id/owner",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pets",
+														":id",
+														"owner"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "create Property Reference-pet-put",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id/owner",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id",
+												"owner"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "update-owner-by-pet-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/pets/:id/owner",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pets",
+														":id",
+														"owner"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/pets/:id/owner",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pets",
+														":id",
+														"owner"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/pets/:id/owner",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pets",
+														":id",
+														"owner"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "delete Property Reference-pet-delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id/owner",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id",
+												"owner"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "delete-owner-by-pet-Id"
+									},
+									"response": [
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/pets/:id/owner",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pets",
+														":id",
+														"owner"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/pets/:id/owner",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pets",
+														":id",
+														"owner"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "create Property Reference-pet-patch",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id/owner",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id",
+												"owner"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "patch-owner-by-pet-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/pets/:id/owner",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pets",
+														":id",
+														"owner"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/pets/:id/owner",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"pets",
+														":id",
+														"owner"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get Item Resource-pet-get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/pets/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pets",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "get-pet"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "get Item Resource-pet-get",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "1",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Method"
+										},
+										{
+											"key": "Vary",
+											"value": "Access-Control-Request-Headers"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/hal+json"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Date",
+											"value": "Fri, 20 Dec 2024 12:27:29 GMT"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=60"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"birthDate\": \"2000-09-07\",\n    \"name\": \"Leo\",\n    \"type\": {\n        \"name\": \"cat\",\n        \"_links\": {\n            \"pets\": [\n                {\n                    \"href\": \"http://localhost:8080/pets/1\"\n                },\n                {\n                    \"href\": \"http://localhost:8080/pets/8\"\n                },\n                {\n                    \"href\": \"http://localhost:8080/pets/7\"\n                },\n                {\n                    \"href\": \"http://localhost:8080/pets/13\"\n                }\n            ]\n        }\n    },\n    \"visits\": [],\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/pets/1\"\n        },\n        \"pet\": {\n            \"href\": \"http://localhost:8080/pets/1\"\n        },\n        \"owner\": {\n            \"href\": \"http://localhost:8080/pets/1/owner\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "put Item Resource-pet-put",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"<string>\",\n  \"type\": {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"pets\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    ]\n  },\n  \"id\": \"<integer>\",\n  \"birthDate\": \"<dateTime>\",\n  \"owner\": \"<string>\",\n  \"visits\": [\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    },\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pets/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pets",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "update-pet"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"<string>\",\n  \"type\": {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"pets\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    ]\n  },\n  \"id\": \"<integer>\",\n  \"birthDate\": \"<dateTime>\",\n  \"owner\": \"<string>\",\n  \"visits\": [\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    },\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"<string>\",\n  \"type\": {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"pets\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    ]\n  },\n  \"id\": \"<integer>\",\n  \"birthDate\": \"<dateTime>\",\n  \"owner\": \"<string>\",\n  \"visits\": [\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    },\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"<string>\",\n  \"type\": {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"pets\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    ]\n  },\n  \"id\": \"<integer>\",\n  \"birthDate\": \"<dateTime>\",\n  \"owner\": \"<string>\",\n  \"visits\": [\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    },\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "delete Item Resource-pet-delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/pets/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pets",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "delete-pet"
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "patch Item Resource-pet-patch",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"<string>\",\n  \"type\": {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"pets\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    ]\n  },\n  \"id\": \"<integer>\",\n  \"birthDate\": \"<dateTime>\",\n  \"owner\": \"<string>\",\n  \"visits\": [\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    },\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/pets/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pets",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "patch-pet"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"<string>\",\n  \"type\": {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"pets\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    ]\n  },\n  \"id\": \"<integer>\",\n  \"birthDate\": \"<dateTime>\",\n  \"owner\": \"<string>\",\n  \"visits\": [\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    },\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"<string>\",\n  \"type\": {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"pets\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    ]\n  },\n  \"id\": \"<integer>\",\n  \"birthDate\": \"<dateTime>\",\n  \"owner\": \"<string>\",\n  \"visits\": [\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    },\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/pets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get Collection Resource-pet-get 1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/hal+json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/pets?page=0&size=20&sort=<string>&sort=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pets"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0",
+									"description": "Zero-based page index (0..N)"
+								},
+								{
+									"key": "size",
+									"value": "20",
+									"description": "The size of the page to be returned"
+								},
+								{
+									"key": "sort",
+									"value": "<string>",
+									"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+								},
+								{
+									"key": "sort",
+									"value": "<string>",
+									"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+								}
+							]
+						},
+						"description": "get-pet"
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/hal+json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/pets?page=0&size=20&sort=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"pets"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0",
+											"description": "Zero-based page index (0..N)"
+										},
+										{
+											"key": "size",
+											"value": "20",
+											"description": "The size of the page to be returned"
+										},
+										{
+											"key": "sort",
+											"value": "<string>",
+											"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/hal+json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"_embedded\": {\n    \"pets\": [\n      {\n        \"name\": \"<string>\",\n        \"type\": {\n          \"id\": \"<integer>\",\n          \"name\": \"<string>\",\n          \"pets\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            }\n          ]\n        },\n        \"id\": \"<integer>\",\n        \"birthDate\": \"<dateTime>\",\n        \"owner\": {\n          \"id\": \"<integer>\",\n          \"address\": \"<string>\",\n          \"city\": \"<string>\",\n          \"firstName\": \"<string>\",\n          \"lastName\": \"<string>\",\n          \"telephone\": \"<string>\",\n          \"pets\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            }\n          ]\n        },\n        \"visits\": [\n          {\n            \"id\": \"<integer>\",\n            \"description\": \"<string>\",\n            \"visitDate\": \"<dateTime>\",\n            \"pet\": {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            }\n          },\n          {\n            \"id\": \"<integer>\",\n            \"description\": \"<string>\",\n            \"visitDate\": \"<dateTime>\",\n            \"pet\": {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            }\n          }\n        ],\n        \"_links\": {\n          \"elit_63\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          },\n          \"magna_e6\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          }\n        }\n      },\n      {\n        \"name\": \"<string>\",\n        \"type\": {\n          \"id\": \"<integer>\",\n          \"name\": \"<string>\",\n          \"pets\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            }\n          ]\n        },\n        \"id\": \"<integer>\",\n        \"birthDate\": \"<dateTime>\",\n        \"owner\": {\n          \"id\": \"<integer>\",\n          \"address\": \"<string>\",\n          \"city\": \"<string>\",\n          \"firstName\": \"<string>\",\n          \"lastName\": \"<string>\",\n          \"telephone\": \"<string>\",\n          \"pets\": [\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            },\n            {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            }\n          ]\n        },\n        \"visits\": [\n          {\n            \"id\": \"<integer>\",\n            \"description\": \"<string>\",\n            \"visitDate\": \"<dateTime>\",\n            \"pet\": {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            }\n          },\n          {\n            \"id\": \"<integer>\",\n            \"description\": \"<string>\",\n            \"visitDate\": \"<dateTime>\",\n            \"pet\": {\n              \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n            }\n          }\n        ],\n        \"_links\": {\n          \"minim_cc\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          },\n          \"eu_c8b\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          }\n        }\n      }\n    ]\n  },\n  \"_links\": {\n    \"tempor_c72\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  },\n  \"page\": {\n    \"size\": \"<long>\",\n    \"totalElements\": \"<long>\",\n    \"totalPages\": \"<long>\",\n    \"number\": \"<long>\"\n  }\n}"
+						}
+					]
+				},
+				{
+					"name": "post Collection Resource-pet-post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"<string>\",\n  \"type\": {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"pets\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    ]\n  },\n  \"id\": \"<integer>\",\n  \"birthDate\": \"<dateTime>\",\n  \"owner\": \"<string>\",\n  \"visits\": [\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    },\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/pets",
+						"description": "create-pet"
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"<string>\",\n  \"type\": {\n    \"id\": \"<integer>\",\n    \"name\": \"<string>\",\n    \"pets\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    ]\n  },\n  \"id\": \"<integer>\",\n  \"birthDate\": \"<dateTime>\",\n  \"owner\": \"<string>\",\n  \"visits\": [\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    },\n    {\n      \"id\": \"<integer>\",\n      \"description\": \"<string>\",\n      \"visitDate\": \"<dateTime>\",\n      \"pet\": {\n        \"value\": \"<Circular reference to #/components/schemas/Pet detected>\"\n      }\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/pets"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "profile",
+			"item": [
+				{
+					"name": "owners",
+					"item": [
+						{
+							"name": "descriptor 1 1 1",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": "{{baseUrl}}/profile/owners"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": "{{baseUrl}}/profile/owners"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/alps+json"
+										}
+									],
+									"cookie": [],
+									"body": "<string>"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "pets",
+					"item": [
+						{
+							"name": "descriptor 1 1 2",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": "{{baseUrl}}/profile/pets"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": "{{baseUrl}}/profile/pets"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/alps+json"
+										}
+									],
+									"cookie": [],
+									"body": "<string>"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "specialties",
+					"item": [
+						{
+							"name": "descriptor 1 1 3",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": "{{baseUrl}}/profile/specialties"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": "{{baseUrl}}/profile/specialties"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/alps+json"
+										}
+									],
+									"cookie": [],
+									"body": "<string>"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "vets",
+					"item": [
+						{
+							"name": "descriptor 1 1 4",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": "{{baseUrl}}/profile/vets"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": "{{baseUrl}}/profile/vets"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/alps+json"
+										}
+									],
+									"cookie": [],
+									"body": "<string>"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "list All Forms Of Metadata 1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/hal+json"
+							}
+						],
+						"url": "{{baseUrl}}/profile"
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/hal+json"
+									}
+								],
+								"url": "{{baseUrl}}/profile"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/hal+json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"_links\": {\n    \"laborum_e95\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    },\n    \"sed_4\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    },\n    \"ut_b48\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "specialties",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "vets",
+							"item": [
+								{
+									"name": "{propertyId}",
+									"item": [
+										{
+											"name": "follow Property Reference-specialty-get",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/specialties/:id/vets/:propertyId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"specialties",
+														":id",
+														"vets",
+														":propertyId"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														},
+														{
+															"key": "propertyId",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												},
+												"description": "get-vet-by-specialty-Id"
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/specialties/:id/vets/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"specialties",
+																":id",
+																"vets",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Not Found",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/specialties/:id/vets/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"specialties",
+																":id",
+																"vets",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "delete Property Reference Id-specialty-delete",
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/specialties/:id/vets/:propertyId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"specialties",
+														":id",
+														"vets",
+														":propertyId"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														},
+														{
+															"key": "propertyId",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												},
+												"description": "delete-vet-by-specialty-Id"
+											},
+											"response": [
+												{
+													"name": "No Content",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/specialties/:id/vets/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"specialties",
+																":id",
+																"vets",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "No Content",
+													"code": 204,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Not Found",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/specialties/:id/vets/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"specialties",
+																":id",
+																"vets",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "follow Property Reference-specialty-get 1",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id/vets",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id",
+												"vets"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "get-vet-by-specialty-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/specialties/:id/vets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"specialties",
+														":id",
+														"vets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/specialties/:id/vets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"specialties",
+														":id",
+														"vets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "create Property Reference-specialty-put",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id/vets",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id",
+												"vets"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "update-vet-by-specialty-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/specialties/:id/vets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"specialties",
+														":id",
+														"vets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/specialties/:id/vets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"specialties",
+														":id",
+														"vets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/specialties/:id/vets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"specialties",
+														":id",
+														"vets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "delete Property Reference-specialty-delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id/vets",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id",
+												"vets"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "delete-vet-by-specialty-Id"
+									},
+									"response": [
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/specialties/:id/vets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"specialties",
+														":id",
+														"vets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/specialties/:id/vets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"specialties",
+														":id",
+														"vets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "create Property Reference-specialty-patch",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id/vets",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id",
+												"vets"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "patch-vet-by-specialty-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/specialties/:id/vets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"specialties",
+														":id",
+														"vets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/specialties/:id/vets",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"specialties",
+														":id",
+														"vets"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get Item Resource-specialty-get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/specialties/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"specialties",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "get-specialty"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "put Item Resource-specialty-put",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"vets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/specialties/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"specialties",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "update-specialty"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"vets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"vets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"vets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "delete Item Resource-specialty-delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/specialties/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"specialties",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "delete-specialty"
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "patch Item Resource-specialty-patch",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"vets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/specialties/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"specialties",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "patch-specialty"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"vets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"vets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/specialties/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"specialties",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get Collection Resource-specialty-get 1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/hal+json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/specialties?page=0&size=20&sort=<string>&sort=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"specialties"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0",
+									"description": "Zero-based page index (0..N)"
+								},
+								{
+									"key": "size",
+									"value": "20",
+									"description": "The size of the page to be returned"
+								},
+								{
+									"key": "sort",
+									"value": "<string>",
+									"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+								},
+								{
+									"key": "sort",
+									"value": "<string>",
+									"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+								}
+							]
+						},
+						"description": "get-specialty"
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/hal+json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/specialties?page=0&size=20&sort=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"specialties"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0",
+											"description": "Zero-based page index (0..N)"
+										},
+										{
+											"key": "size",
+											"value": "20",
+											"description": "The size of the page to be returned"
+										},
+										{
+											"key": "sort",
+											"value": "<string>",
+											"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/hal+json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"_embedded\": {\n    \"specialties\": [\n      {\n        \"id\": \"<integer>\",\n        \"name\": \"<string>\",\n        \"vets\": [\n          {\n            \"id\": \"<integer>\",\n            \"firstName\": \"<string>\",\n            \"lastName\": \"<string>\",\n            \"specialties\": [\n              {\n                \"id\": \"<integer>\",\n                \"name\": \"<string>\",\n                \"vets\": [\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  },\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  }\n                ]\n              },\n              {\n                \"id\": \"<integer>\",\n                \"name\": \"<string>\",\n                \"vets\": [\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  },\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  }\n                ]\n              }\n            ]\n          },\n          {\n            \"id\": \"<integer>\",\n            \"firstName\": \"<string>\",\n            \"lastName\": \"<string>\",\n            \"specialties\": [\n              {\n                \"id\": \"<integer>\",\n                \"name\": \"<string>\",\n                \"vets\": [\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  },\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  }\n                ]\n              },\n              {\n                \"id\": \"<integer>\",\n                \"name\": \"<string>\",\n                \"vets\": [\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  },\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  }\n                ]\n              }\n            ]\n          }\n        ],\n        \"_links\": {\n          \"in1e6\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          },\n          \"laboris_01\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          }\n        }\n      },\n      {\n        \"id\": \"<integer>\",\n        \"name\": \"<string>\",\n        \"vets\": [\n          {\n            \"id\": \"<integer>\",\n            \"firstName\": \"<string>\",\n            \"lastName\": \"<string>\",\n            \"specialties\": [\n              {\n                \"id\": \"<integer>\",\n                \"name\": \"<string>\",\n                \"vets\": [\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  },\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  }\n                ]\n              },\n              {\n                \"id\": \"<integer>\",\n                \"name\": \"<string>\",\n                \"vets\": [\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  },\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  }\n                ]\n              }\n            ]\n          },\n          {\n            \"id\": \"<integer>\",\n            \"firstName\": \"<string>\",\n            \"lastName\": \"<string>\",\n            \"specialties\": [\n              {\n                \"id\": \"<integer>\",\n                \"name\": \"<string>\",\n                \"vets\": [\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  },\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  }\n                ]\n              },\n              {\n                \"id\": \"<integer>\",\n                \"name\": \"<string>\",\n                \"vets\": [\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  },\n                  {\n                    \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n                  }\n                ]\n              }\n            ]\n          }\n        ],\n        \"_links\": {\n          \"nisiff\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          },\n          \"nulla3\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          },\n          \"mollit96\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          }\n        }\n      }\n    ]\n  },\n  \"_links\": {\n    \"non_b\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  },\n  \"page\": {\n    \"size\": \"<long>\",\n    \"totalElements\": \"<long>\",\n    \"totalPages\": \"<long>\",\n    \"number\": \"<long>\"\n  }\n}"
+						}
+					]
+				},
+				{
+					"name": "post Collection Resource-specialty-post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"vets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/specialties",
+						"description": "create-specialty"
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<integer>\",\n  \"name\": \"<string>\",\n  \"vets\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/specialties"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "vets",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "specialties",
+							"item": [
+								{
+									"name": "{propertyId}",
+									"item": [
+										{
+											"name": "follow Property Reference-vet-get",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/vets/:id/specialties/:propertyId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vets",
+														":id",
+														"specialties",
+														":propertyId"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														},
+														{
+															"key": "propertyId",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												},
+												"description": "get-specialty-by-vet-Id"
+											},
+											"response": [
+												{
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/vets/:id/specialties/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"vets",
+																":id",
+																"specialties",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Not Found",
+													"originalRequest": {
+														"method": "GET",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/vets/:id/specialties/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"vets",
+																":id",
+																"specialties",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										},
+										{
+											"name": "delete Property Reference Id-vet-delete",
+											"request": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/vets/:id/specialties/:propertyId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vets",
+														":id",
+														"specialties",
+														":propertyId"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<string>",
+															"description": "(Required) "
+														},
+														{
+															"key": "propertyId",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													]
+												},
+												"description": "delete-specialty-by-vet-Id"
+											},
+											"response": [
+												{
+													"name": "No Content",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/vets/:id/specialties/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"vets",
+																":id",
+																"specialties",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "No Content",
+													"code": 204,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												},
+												{
+													"name": "Not Found",
+													"originalRequest": {
+														"method": "DELETE",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/vets/:id/specialties/:propertyId",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"vets",
+																":id",
+																"specialties",
+																":propertyId"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																},
+																{
+																	"key": "propertyId"
+																}
+															]
+														}
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "follow Property Reference-vet-get 1",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id/specialties",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id",
+												"specialties"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "get-specialty-by-vet-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/vets/:id/specialties",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vets",
+														":id",
+														"specialties"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/vets/:id/specialties",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vets",
+														":id",
+														"specialties"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "create Property Reference-vet-put",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id/specialties",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id",
+												"specialties"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "update-specialty-by-vet-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/vets/:id/specialties",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vets",
+														":id",
+														"specialties"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/vets/:id/specialties",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vets",
+														":id",
+														"specialties"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/vets/:id/specialties",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vets",
+														":id",
+														"specialties"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "delete Property Reference-vet-delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id/specialties",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id",
+												"specialties"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "delete-specialty-by-vet-Id"
+									},
+									"response": [
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/vets/:id/specialties",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vets",
+														":id",
+														"specialties"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/vets/:id/specialties",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vets",
+														":id",
+														"specialties"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "create Property Reference-vet-patch",
+									"request": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id/specialties",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id",
+												"specialties"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										},
+										"description": "patch-specialty-by-vet-Id"
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/vets/:id/specialties",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vets",
+														":id",
+														"specialties"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "No Content",
+											"originalRequest": {
+												"method": "PATCH",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"_embedded\": {},\n  \"_links\": {\n    \"laborefbc\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/vets/:id/specialties",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"vets",
+														":id",
+														"specialties"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "No Content",
+											"code": 204,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "get Item Resource-vet-get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/vets/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"vets",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "get-vet"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "put Item Resource-vet-put",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<integer>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"specialties\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/vets/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"vets",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "update-vet"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"specialties\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"specialties\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"specialties\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "delete Item Resource-vet-delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/vets/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"vets",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "delete-vet"
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "patch Item Resource-vet-patch",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<integer>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"specialties\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/vets/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"vets",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								},
+								"description": "patch-vet"
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"specialties\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"specialties\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/vets/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"vets",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get Collection Resource-vet-get 1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/hal+json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/vets?page=0&size=20&sort=<string>&sort=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vets"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0",
+									"description": "Zero-based page index (0..N)"
+								},
+								{
+									"key": "size",
+									"value": "20",
+									"description": "The size of the page to be returned"
+								},
+								{
+									"key": "sort",
+									"value": "<string>",
+									"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+								},
+								{
+									"key": "sort",
+									"value": "<string>",
+									"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+								}
+							]
+						},
+						"description": "get-vet"
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/hal+json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/vets?page=0&size=20&sort=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"vets"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0",
+											"description": "Zero-based page index (0..N)"
+										},
+										{
+											"key": "size",
+											"value": "20",
+											"description": "The size of the page to be returned"
+										},
+										{
+											"key": "sort",
+											"value": "<string>",
+											"description": "Sorting criteria in the format: property,(asc|desc). Default sort order is ascending. Multiple sort criteria are supported."
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/hal+json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"_embedded\": {\n    \"vets\": [\n      {\n        \"id\": \"<integer>\",\n        \"firstName\": \"<string>\",\n        \"lastName\": \"<string>\",\n        \"specialties\": [\n          {\n            \"id\": \"<integer>\",\n            \"name\": \"<string>\",\n            \"vets\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n              }\n            ]\n          },\n          {\n            \"id\": \"<integer>\",\n            \"name\": \"<string>\",\n            \"vets\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n              }\n            ]\n          }\n        ],\n        \"_links\": {\n          \"sintf\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          }\n        }\n      },\n      {\n        \"id\": \"<integer>\",\n        \"firstName\": \"<string>\",\n        \"lastName\": \"<string>\",\n        \"specialties\": [\n          {\n            \"id\": \"<integer>\",\n            \"name\": \"<string>\",\n            \"vets\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n              }\n            ]\n          },\n          {\n            \"id\": \"<integer>\",\n            \"name\": \"<string>\",\n            \"vets\": [\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n              },\n              {\n                \"value\": \"<Circular reference to #/components/schemas/Vet detected>\"\n              }\n            ]\n          }\n        ],\n        \"_links\": {\n          \"temporb48\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          },\n          \"fugiat_41\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          },\n          \"dolor5_d\": {\n            \"href\": \"<string>\",\n            \"hreflang\": \"<string>\",\n            \"title\": \"<string>\",\n            \"type\": \"<string>\",\n            \"deprecation\": \"<string>\",\n            \"profile\": \"<string>\",\n            \"name\": \"<string>\",\n            \"templated\": \"<boolean>\"\n          }\n        }\n      }\n    ]\n  },\n  \"_links\": {\n    \"reprehenderita5b\": {\n      \"href\": \"<string>\",\n      \"hreflang\": \"<string>\",\n      \"title\": \"<string>\",\n      \"type\": \"<string>\",\n      \"deprecation\": \"<string>\",\n      \"profile\": \"<string>\",\n      \"name\": \"<string>\",\n      \"templated\": \"<boolean>\"\n    }\n  },\n  \"page\": {\n    \"size\": \"<long>\",\n    \"totalElements\": \"<long>\",\n    \"totalPages\": \"<long>\",\n    \"number\": \"<long>\"\n  }\n}"
+						}
+					]
+				},
+				{
+					"name": "post Collection Resource-vet-post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<integer>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"specialties\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/vets",
+						"description": "create-vet"
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<integer>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"specialties\": [\n    \"<string>\",\n    \"<string>\"\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/vets"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		}
+	]
+}
