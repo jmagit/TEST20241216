@@ -40,6 +40,10 @@
 
     cd docker\selenium && docker compose up -d
 
+#### Web4Testing
+
+    docker run -d --name web-for-testing -p 8181:8181 jamarton/web-for-testing
+
 ### Comandos
 
 #### Maven
